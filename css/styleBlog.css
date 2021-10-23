@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(../bkground.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    max-width: 1200px;
+    max-height: 1980px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr 50px;
+    grid-template-areas:
+    "hd hd"
+    "main1 main2"
+    "ft ft";
+    grid-gap: 10px;
+    box-sizing: border-box;
+}
+
+.header{
+    grid-area: hd;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.content1{
+    grid-area: main1;
+    text-align: justify;
+    color: white;
+}
+
+.content2{
+    grid-area: main2;
+    text-align: justify;
+}
+
+.footer{
+    grid-area: ft;
+    text-align: center;
+}

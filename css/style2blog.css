@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+html {
+    background-image: url(../bkground.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+li a{
+    float: right;
+    list-style-type: none;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+}
+
+li a:hover{
+    background-color: white;
+    color: black;
+}
+
+.header {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 30px;
+}
+
+.content1{
+    text-align: left;
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 40%;
+    
+
+}
